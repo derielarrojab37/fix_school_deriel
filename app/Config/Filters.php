@@ -108,3 +108,5 @@ class Filters extends BaseFilters
      */
     public array $filters = [];
 }
+  'auth' => \App\Filters\AuthFilter::class,
+  'role' => \App\Filters\RoleFilter::class,

@@ -9,4 +9,6 @@
             <i class="bi bi-house"></i> <span>Dashboard</span>
         </a>
     </li>
+        // Tombol logout 
+        <a href="<?= site_url('/logout') ?>"> Log Out </a>
 </ul>
