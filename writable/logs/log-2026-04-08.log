@@ -679,3 +679,226 @@ in APPPATH\Controllers\Tanggapan.php on line 17.
 DEBUG - 2026-04-08 06:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-04-08 06:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-04-08 06:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-08 06:37:22 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:37:29 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:37:29 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:00 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:01 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:01 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:01 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:01 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:02 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:07 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:08 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:08 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:08 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-08 06:38:08 --> ErrorException: Undefined variable $pengaduan
+[Method: GET, Route: tanggapan]
+in APPPATH\Views\tanggapan\index.php on line 7.
+ 1 APPPATH\Views\tanggapan\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengaduan', 'C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fix_school_deriel\\app\\Views\\tanggapan\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('tanggapan/index', [], true)
+ 5 APPPATH\Controllers\Tanggapan.php(19): view('tanggapan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tanggapan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tanggapan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-08 06:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 06:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 07:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 07:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-08 07:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

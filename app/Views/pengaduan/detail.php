@@ -20,7 +20,7 @@
 
 <hr>
 
-<a href="/tanggapan/create/<?= $pengaduan['id_pengaduan'] ?>" class="btn btn-primary">
+<a href="<?= base_url('tanggapan/create/' . $pengaduan['id_pengaduan']) ?>" class="btn btn-primary">
     + Tanggapi
 </a>
 
