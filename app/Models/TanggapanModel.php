@@ -16,14 +16,18 @@ class TanggapanModel extends Model
         'tanggal'
     ];
 
-    protected $useTimestamps = false; // karena pakai field tanggal manual
-
-    // 🔥 JOIN ke pengaduan & user (biar tampil nama, bukan ID)
-    public function getTanggapanWithRelasi()
+    public function getTanggapan()
     {
-        return $this->select('tanggapan.*, pengaduan.judul, user.nama')
-                    ->join('pengaduan', 'pengaduan.id_pengaduan = tanggapan.id_pengaduan')
-                    ->join('user', 'user.id_user = tanggapan.id_user')
-                    ->findAll();
+        return $this->select('tanggapan.*, users.nama, pengaduan.judul')
+            ->join('users', 'users.id_user = tanggapan.id_user')
+            ->join('pengaduan', 'pengaduan.id_pengaduan = tanggapan.id_pengaduan')
+            ->findAll();
+    }
+
+    public function getByPengaduan($id_pengaduan)
+    {
+        return $this->where('id_pengaduan', $id_pengaduan)
+            ->join('users', 'users.id_user = tanggapan.id_user')
+            ->findAll();
     }
 }

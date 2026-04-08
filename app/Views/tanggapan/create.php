@@ -1,31 +1,25 @@
-<?= $this->extend('layout/template') ?>
-<?= $this->section('content') ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Tanggapan</title>
+    <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+</head>
+<body>
 
 <div class="container mt-4">
     <h3>Tambah Tanggapan</h3>
 
-    <form action="<?= base_url('tanggapan/store') ?>" method="post">
-
-        <div class="mb-3">
-            <label>Pengaduan</label>
-            <select name="id_pengaduan" class="form-control" required>
-                <?php foreach($pengaduan as $p): ?>
-                    <option value="<?= $p['id_pengaduan'] ?>">
-                        <?= $p['judul'] ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
+    <form action="/tanggapan/store" method="post">
+        <input type="hidden" name="id_pengaduan" value="<?= $id_pengaduan ?>">
 
         <div class="mb-3">
             <label>Isi Tanggapan</label>
             <textarea name="isi_tanggapan" class="form-control" required></textarea>
         </div>
 
-        <button class="btn btn-success">Simpan</button>
-        <a href="<?= base_url('tanggapan') ?>" class="btn btn-secondary">Kembali</a>
-
+        <button type="submit" class="btn btn-success">Kirim</button>
     </form>
 </div>
 
-<?= $this->endSection() ?>
+</body>
+</html>

@@ -31,5 +31,7 @@ $routes->get('/users/edit/(:num)', 'Users::edit/$1', $allRole); // form edit use
 $routes->post('/users/update/(:num)', 'Users::update/$1', $allRole); // aksi update user
 $routes->get('/users/delete/(:num)', 'Users::delete/$1', $allRole); // aksi hapus user
 
-$routes->get('tanggapan/(:num)', 'Tanggapan::index/$1'); 
-$routes->post('tanggapan/simpan', 'Tanggapan::simpan');
+$routes->get('/tanggapan', 'Tanggapan::index');
+$routes->get('/tanggapan/create/(:num)', 'Tanggapan::create/$1');
+$routes->post('/tanggapan/store', 'Tanggapan::store');
+$routes->get('/tanggapan/delete/(:num)', 'Tanggapan::delete/$1');
