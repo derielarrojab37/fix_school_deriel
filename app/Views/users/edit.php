@@ -31,6 +31,7 @@
                     <select name="role" class="form-control">
                         <option value="admin" <?= $user['role'] == 'admin' ? 'selected' : '' ?>>Admin</option>
                         <option value="user" <?= $user['role'] == 'user' ? 'selected' : '' ?>>User</option>
+                        <option value="teknisi" <?= $user['role'] == 'teknisi' ? 'selected' : '' ?>>Teknisi</option>
                     </select>
                 </div>
 

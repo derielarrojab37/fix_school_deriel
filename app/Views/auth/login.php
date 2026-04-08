@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login - FIXSCHOOL</title>
+    <title>Login - FIX SCHOOL</title>
 
     <!-- Bootstrap -->
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">

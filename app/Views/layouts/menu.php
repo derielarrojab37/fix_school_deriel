@@ -1,7 +1,7 @@
 <ul class="nav flex-column mt-3">
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <b>Maldin17</b>App <i class="bi bi-yelp"></i>
+            <b>Fix </b>School <i class="bi bi-yelp"></i>
         </a>
     </li>
     <li class="nav-item">
