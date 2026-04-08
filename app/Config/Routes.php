@@ -35,3 +35,9 @@ $routes->get('/tanggapan', 'Tanggapan::index');
 $routes->get('/tanggapan/create/(:num)', 'Tanggapan::create/$1');
 $routes->post('/tanggapan/store', 'Tanggapan::store');
 $routes->get('/tanggapan/delete/(:num)', 'Tanggapan::delete/$1');
+
+$routes->get('/pengaduan', 'Pengaduan::index');
+$routes->get('/pengaduan/create', 'Pengaduan::create');
+$routes->post('/pengaduan/store', 'Pengaduan::store');
+$routes->get('/pengaduan/delete/(:num)', 'Pengaduan::delete/$1');
+$routes->get('/pengaduan/detail/(:num)', 'Pengaduan::detail/$1');

@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Tambah Tanggapan</title>
-    <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
-</head>
-<body>
+<?= $this->extend('layouts/main') ?>
 
-<div class="container mt-4">
-    <h3>Tambah Tanggapan</h3>
+<?= $this->section('content') ?>
 
-    <form action="/tanggapan/store" method="post">
-        <input type="hidden" name="id_pengaduan" value="<?= $id_pengaduan ?>">
+<h3>Tambah Tanggapan</h3>
 
-        <div class="mb-3">
-            <label>Isi Tanggapan</label>
-            <textarea name="isi_tanggapan" class="form-control" required></textarea>
-        </div>
+<form action="/tanggapan/store" method="post">
+    <input type="hidden" name="id_pengaduan" value="<?= $id_pengaduan ?>">
 
-        <button type="submit" class="btn btn-success">Kirim</button>
-    </form>
-</div>
+    <div class="mb-3">
+        <label>Isi Tanggapan</label>
+        <textarea name="isi_tanggapan" class="form-control" required></textarea>
+    </div>
 
-</body>
-</html>
+    <button class="btn btn-success">Kirim</button>
+</form>
+
+<?= $this->endSection() ?>

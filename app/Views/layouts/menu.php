@@ -25,14 +25,19 @@
             <i class="bi bi-person-gear"></i> <span>Setting</span>
         </a>
     </li>  
-    <?php if (session()->get('role') == 'admin'): ?>
-<li class="nav-item">
-    <a href="<?= base_url('tanggapan') ?>" class="nav-link">
-        <i class="bi bi-chat-dots"></i>
-        <span>Tanggapan</span>
-    </a>
-</li>
-<?php endif; ?>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('pengaduan') ?>">
+            <i class="bi bi-exclamation-circle"></i>
+            <span>Pengaduan</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('tanggapan') ?>">
+            <i class="bi bi-exclamation-circle"></i>
+            <span>Tanggapan</span>
+        </a>
+    </li>
+
 </ul>
 <li class="nav-item mt-3">
     <span class="nav-link disabled">Masuk sebagai: <b><?= session('nama'); ?> (<?= session('role'); ?>)</b></span>
