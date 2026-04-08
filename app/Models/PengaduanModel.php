@@ -28,10 +28,10 @@ class PengaduanModel extends Model
     }
 
     public function getDetail($id)
-    {
-        return $this->select('pengaduan.*, users.nama')
-            ->join('users', 'users.id_user = pengaduan.id_user')
-            ->where('id_pengaduan', $id)
-            ->first();
-    }
+{
+    return $this->select('pengaduan.*, users.nama')
+                ->join('users', 'users.id_user = pengaduan.id_user')
+                ->where('id_pengaduan', $id)
+                ->first(); // wajib pakai first() agar hanya 1 record
+}
 }

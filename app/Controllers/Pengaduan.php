@@ -55,11 +55,12 @@ class Pengaduan extends BaseController
         return redirect()->to('/pengaduan');
     }
 
-    public function detail($id)
-    {
-        $data['pengaduan'] = $this->pengaduanModel->getDetail($id);
-        $data['tanggapan'] = $this->tanggapanModel->getByPengaduan($id);
+   public function detail($id)
+{
+    $data['pengaduan'] = $this->pengaduanModel->getDetail($id);
+    $data['tanggapan'] = $this->tanggapanModel->getByPengaduan($id);
 
-        return view('pengaduan/detail', $data);
-    }
+    return view('pengaduan/detail', $data);
+}
+    
 }

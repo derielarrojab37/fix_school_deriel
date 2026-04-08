@@ -24,8 +24,7 @@
         <td><?= $p['lokasi'] ?></td>
         <td><?= $p['status'] ?></td>
         <td>
-            <a href="/pengaduan/detail/<?= $p['id_pengaduan'] ?>" class="btn btn-info btn-sm">Detail</a>
-        </td>
+           <a href="<?= base_url('pengaduan/detail/' . $p['id_pengaduan']) ?>" class="btn btn-info btn-sm">Detail</a>
     </tr>
     <?php endforeach ?>
 </table>
