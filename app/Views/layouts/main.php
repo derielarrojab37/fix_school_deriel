@@ -11,92 +11,211 @@
     <link href="<?= base_url('assets/bootstrap-icons-1.13.1/bootstrap-icons.css') ?>" rel="stylesheet">
 
     <style>
-        :root {
-            --sidebar-width: 260px;
-            --primary-color: #4361ee;
-            --bg-light: #f8fafe;
-            --sidebar-bg: #ffffff;
-            --text-muted: #6c757d;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    :root {
+        --sidebar-width: 270px;
+        --primary-color: #4361ee;
+        --secondary-color: #4cc9f0;
+        --bg-light: #f4f7fe;
+        --sidebar-bg: #ffffff;
+        --text-dark: #2b3674;
+        --text-muted: #a3aed0;
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
-            display: flex;
-            min-height: 100vh;
-            margin: 0;
-            color: #2d3436;
-        }
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-light);
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text-dark);
+    }
 
-        /* --- Sidebar Modern --- */
-        .sidebar {
-            width: var(--sidebar-width);
-            background-color: var(--sidebar-bg);
-            border-right: 1px solid rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-            z-index: 1000;
-            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.02);
-        }
+    /* --- Sidebar Modern --- */
+    .sidebar {
+        width: var(--sidebar-width);
+        background-color: var(--sidebar-bg);
+        border-right: 1px solid rgba(0,0,0,0.02);
+        display: flex;
+        flex-direction: column;
+        transition: var(--transition);
+        position: fixed; /* Biar sidebar tetap di tempat saat scroll */
+        height: 100vh;
+        z-index: 1000;
+    }
 
-        /* Styling untuk menu di dalam Sidebar (mengasumsikan menu.php berisi list) */
-        .sidebar-header {
-            padding: 2rem 1.5rem;
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: var(--primary-color);
-            letter-spacing: -0.5px;
-        }
+    .sidebar-header {
+        padding: 2.5rem 2rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--text-dark);
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-        /* --- Konten Utama --- */
-        .content {
-            flex-grow: 1;
-            padding: 2rem;
-            max-width: calc(100% - var(--sidebar-width));
-            transition: var(--transition);
-        }
+    .sidebar-header i {
+        color: var(--primary-color);
+        margin-right: 12px;
+    }
 
-        /* Efek Hover & Active pada Menu (Update di menu.php kamu juga nanti) */
-        .nav-link {
-            border-radius: 12px;
-            margin: 4px 15px;
-            padding: 10px 15px;
-            color: var(--text-muted);
-            font-weight: 500;
-            transition: var(--transition);
-        }
+    /* --- Konten Utama --- */
+    .content {
+        flex-grow: 1;
+        padding: 2rem 2.5rem;
+        margin-left: var(--sidebar-width); /* Memberi ruang untuk fixed sidebar */
+        width: calc(100% - var(--sidebar-width));
+        transition: var(--transition);
+    }
 
-        .nav-link:hover {
-            background-color: rgba(67, 97, 238, 0.08);
-            color: var(--primary-color);
-        }
+    /* --- Widget Dashboard --- */
+    .stat-card {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        border: none;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+        transition: transform 0.3s;
+    }
 
-        .nav-link.active {
-            background-color: var(--primary-color);
-            color: white !important;
-            box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
-        }
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
 
-        /* Card Container untuk Konten */
-        .main-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 25px;
-            border: none;
-            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-        }
+    .icon-box {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background: var(--bg-light);
+        color: var(--primary-color);
+        margin-right: 15px;
+    }
 
-        /* Responsive Mobile */
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 70px;
-            }
-            .sidebar span { display: none; } /* Sembunyikan teks menu */
-            .content { max-width: calc(100% - 70px); }
-        }
-    </style>
+    .stat-title {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+
+    .stat-value {
+        color: var(--text-dark);
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    /* --- Main Content Card --- */
+    .main-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 30px;
+        border: none;
+        box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.1);
+        min-height: 400px;
+    }
+
+    /* Tombol Notification yang lebih bergaya */
+    .btn-notif {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        color: var(--primary-color);
+        border: none;
+        box-shadow: 0px 10px 20px rgba(112, 144, 176, 0.1);
+        position: relative;
+    }
+
+    .btn-notif::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 8px;
+        height: 8px;
+        background: #ff5b5b;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    /* User Profile Box di Sidebar */
+    .user-sidebar-info {
+        background: var(--bg-light);
+        margin: 20px;
+        padding: 15px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-avatar-sm {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--primary-color);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .sidebar { transform: translateX(-100%); }
+        .content { margin-left: 0; width: 100%; }
+    }
+    /* State Sidebar Tertutup */
+    .sidebar.collapsed {
+        margin-left: calc(var(--sidebar-width) * -1);
+    }
+
+    /* Penyesuaian Konten saat Sidebar Tertutup */
+    .content.expanded {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Tombol Toggle Styling */
+    .toggle-sidebar-btn {
+        background: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        color: var(--primary-color);
+        box-shadow: 0px 10px 20px rgba(112, 144, 176, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: var(--transition);
+        margin-right: 15px;
+    }
+
+    .toggle-sidebar-btn:hover {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    /* Overlay untuk Mobile (Opsional) */
+    @media (max-width: 768px) {
+        .sidebar { margin-left: calc(var(--sidebar-width) * -1); }
+        .sidebar.mobile-show { margin-left: 0; }
+        .content { margin-left: 0; width: 100%; }
+    }
+</style>
 </head>
 
 <body>
@@ -114,11 +233,17 @@
         </div>
     </aside>
 
-    <main class="content">
+    <main id="main-content" class="content">
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h4 class="fw-bold mb-0">Dashboard Overview</h4>
-                <button class="btn btn-outline-primary btn-sm rounded-pill">
+                <div class="d-flex align-items-center">
+                    <button class="toggle-sidebar-btn" id="sidebarToggle">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <h4 class="fw-bold mb-0">Dashboard Overview</h4>
+                </div>
+                
+                <button class="btn btn-notif">
                     <i class="bi bi-bell"></i>
                 </button>
             </div>
@@ -130,5 +255,29 @@
     </main>
 
     <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('main-content');
+
+        sidebarToggle.addEventListener('click', () => {
+            // Untuk Desktop
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
+
+            // Untuk Mobile
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('mobile-show');
+            }
+        });
+
+        // Menutup sidebar otomatis jika layar di-resize ke ukuran mobile
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                sidebar.classList.remove('mobile-show');
+            }
+        });
+    </script>
 </body>
 </html>
