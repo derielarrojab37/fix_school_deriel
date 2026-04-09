@@ -46,9 +46,9 @@
                         <label class="form-label">Role</label>
                         <select name="role" class="form-control" required>
                             <option value="">-- Pilih Role --</option>
-                            <option value="admin">Admin</option>
                             <option value="user">User</option>
-                            <option value="user">Teknisi</option>
+                            <option value="admin">Admin</option>
+                            <option value="teknisi">Teknisi</option>
                         </select>
                     </div>
 
