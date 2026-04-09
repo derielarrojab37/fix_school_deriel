@@ -135,15 +135,23 @@
                 </div>
 
                 <div class="report-description">
-                    <?= nl2br($pengaduan['deskripsi']) ?>
-                </div>
+    <?= nl2br($pengaduan['deskripsi']) ?>
+</div>
 
-                <?php if (!empty($pengaduan['foto'])): ?>
-                    <div class="mt-4">
-                        <p class="fw-bold mb-2">Lampiran Bukti:</p>
-                        <img src="<?= base_url('uploads/pengaduan/' . $pengaduan['foto']) ?>" class="img-evidence" alt="Evidence">
-                    </div>
-                <?php endif; ?>
+<?php if(session('role') == 'admin' && $pengaduan['status'] == 'menunggu'): ?>
+    <div class="mt-4 p-3 rounded-4 border-start border-4 border-warning shadow-sm" style="background: #fffdf5;">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <div class="small">
+                <b class="text-dark d-block">Laporan Menunggu Tindakan</b>
+                <span class="text-muted">Segera tugaskan teknisi untuk memproses laporan ini.</span>
+            </div>
+            <a href="<?= base_url('penugasan/create/' . $pengaduan['id_pengaduan']) ?>" 
+               class="btn btn-warning btn-sm fw-bold px-3 shadow-sm">
+                <i class="bi bi-tools me-1"></i> Tugaskan Sekarang
+            </a>
+        </div>
+    </div>
+<?php endif; ?>
 
                 <hr class="my-5 opacity-10">
 

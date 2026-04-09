@@ -20,12 +20,12 @@ class PengaduanModel extends Model
     ];
 
     public function getPengaduan()
-    {
-        return $this->select('pengaduan.*, users.nama')
-            ->join('users', 'users.id_user = pengaduan.id_user')
-            ->orderBy('tanggal', 'DESC')
-            ->findAll();
-    }
+{
+    return $this->select('pengaduan.*, users.nama')
+        ->join('users', 'users.id_user = pengaduan.id_user')
+        ->orderBy('pengaduan.tanggal', 'DESC') // Urutkan dari yang terbaru
+        ->findAll();
+}
 
     public function getDetail($id)
 {

@@ -28,26 +28,28 @@ class Pengaduan extends BaseController
     }
 
     public function store()
-    {
-        $file = $this->request->getFile('foto');
+{
+    $file = $this->request->getFile('foto');
+    $namaFoto = null;
 
-        $namaFoto = null;
-        if ($file && $file->isValid()) {
-            $namaFoto = $file->getRandomName();
-            $file->move('uploads', $namaFoto);
-        }
-
-        $this->pengaduanModel->save([
-            'id_user' => session()->get('id_user'),
-            'judul' => $this->request->getPost('judul'),
-            'deskripsi' => $this->request->getPost('deskripsi'),
-            'lokasi' => $this->request->getPost('lokasi'),
-            'foto' => $namaFoto,
-            'status' => 'menunggu'
-        ]);
-
-        return redirect()->to('/pengaduan');
+    if ($file && $file->isValid() && !$file->hasMoved()) {
+        $namaFoto = $file->getRandomName();
+        // Simpan ke public/uploads/pengaduan agar bisa diakses browser
+        $file->move(FCPATH . 'uploads/pengaduan', $namaFoto);
     }
+
+    $this->pengaduanModel->save([
+        'id_user'   => session()->get('id_user'),
+        'judul'     => $this->request->getPost('judul'),
+        'deskripsi' => $this->request->getPost('deskripsi'),
+        'lokasi'    => $this->request->getPost('lokasi'),
+        'foto'      => $namaFoto,
+        'tanggal'   => date('Y-m-d H:i:s'), // Tambahkan tanggal otomatis
+        'status'    => 'menunggu' 
+    ]);
+
+    return redirect()->to('/pengaduan')->with('success', 'Laporan berhasil terkirim!');
+}
 
     public function delete($id)
     {

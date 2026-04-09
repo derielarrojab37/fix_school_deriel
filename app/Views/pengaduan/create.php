@@ -129,12 +129,13 @@
                             </div>
 
                             <div class="col-md-12 mb-5">
-                                <label class="form-label"><i class="bi bi-camera"></i> Bukti Foto</label>
-                                <div class="upload-box">
-                                    <i class="bi bi-cloud-arrow-up display-6 text-muted mb-2 d-block"></i>
-                                    <input type="file" name="foto" class="form-control">
+                            <label class="form-label"><i class="bi bi-camera"></i> Bukti Foto</label>
+                                <div class="upload-box" onclick="document.getElementById('fotoInput').click();" style="cursor: pointer;">
+                                     <i class="bi bi-cloud-arrow-up display-6 text-muted mb-2 d-block"></i>
+                                    <span id="fileName" class="text-muted small">Klik untuk unggah foto atau drag & drop</span>
+                                    <input type="file" name="foto" id="fotoInput" class="form-control d-none" onchange="document.getElementById('fileName').innerText = this.files[0].name">
                                     <p class="small text-muted mt-2 mb-0">Format: JPG, PNG, WEBP (Maksimal 2MB)</p>
-                                </div>
+                                 </div>
                             </div>
                         </div>
 

@@ -119,22 +119,24 @@
                                 <span class="text-muted"><i class="bi bi-geo-alt me-1"></i> <?= $p['lokasi'] ?></span>
                             </td>
                             <td class="text-center">
-                                <?php 
-                                    $status = strtolower($p['status']);
-                                    $class = 'status-pending';
-                                    if ($status == 'proses') $class = 'status-proses';
-                                    if ($status == 'selesai') $class = 'status-selesai';
-                                ?>
-                                <span class="badge-status <?= $class ?>">
-                                    <i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i>
-                                    <?= ucfirst($p['status']) ?>
-                                </span>
+    <?php 
+        $status = strtolower($p['status']);
+        $class = 'status-pending'; // Default untuk 'menunggu'
+        if ($status == 'proses' || $status == 'diproses') $class = 'status-proses';
+        if ($status == 'selesai') $class = 'status-selesai';
+    ?>
+    <span class="badge-status <?= $class ?>">
+        <i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i>
+        <?= ucfirst($p['status']) ?>
+    </span>
+</td>
                             </td>
                             <td class="text-center">
                                 <a href="<?= base_url('pengaduan/detail/' . $p['id_pengaduan']) ?>" class="btn-detail">
                                     Detail
                                 </a>
                             </td>
+                        
                         </tr>
                         <?php endforeach ?>
                     <?php else: ?>
@@ -142,6 +144,7 @@
                             <td colspan="6" class="text-center py-5 text-muted">Belum ada data pengaduan.</td>
                         </tr>
                     <?php endif; ?>
+                
                 </tbody>
             </table>
         </div>
