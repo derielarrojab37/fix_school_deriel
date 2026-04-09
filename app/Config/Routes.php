@@ -42,7 +42,13 @@ $routes->post('/pengaduan/store', 'Pengaduan::store');
 $routes->get('/pengaduan/delete/(:num)', 'Pengaduan::delete/$1');
 $routes->get('/pengaduan/detail/(:num)', 'Pengaduan::detail/$1');
 
+
+
 $routes->get('/penugasan', 'Penugasan::index');
-$routes->get('/penugasan/create/(:num)', 'Penugasan::create/$1');
+// Tambahkan baris ini (tanpa ID)
+$routes->get('/penugasan/create', 'Penugasan::create'); 
+// Ini tetap untuk yang dari tombol detail
+$routes->get('/penugasan/create/(:num)', 'Penugasan::create/$1'); 
+
 $routes->post('/penugasan/store', 'Penugasan::store');
 $routes->get('/penugasan/from-tanggapan/(:num)', 'Penugasan::createFromTanggapan/$1');
