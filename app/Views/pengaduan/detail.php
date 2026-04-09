@@ -190,15 +190,36 @@
         </div>
 
         <div class="col-lg-4">
-            <div class="card border-0 rounded-4 shadow-sm p-4 h-100" style="background: linear-gradient(180deg, #f8fafe 0%, #ffffff 100%);">
-                <h5 class="fw-bold mb-3">Informasi Tambahan</h5>
-                <p class="small text-muted">Laporan ini bersifat rahasia dan hanya dapat diakses oleh Admin serta petugas yang berwenang.</p>
-                
-                <div class="alert alert-warning border-0 rounded-3">
-                    <small>Pastikan setiap tanggapan menggunakan bahasa yang sopan dan solutif.</small>
-                </div>
+    <div class="card border-0 rounded-4 shadow-sm p-4" style="background: white;">
+        <h5 class="fw-bold mb-3" style="color: #2b3674;">Moderasi Laporan</h5>
+        
+        <?php if ($pengaduan['status'] == 'menunggu'): ?>
+            <div class="d-grid gap-2">
+                <a href="<?= base_url('penugasan/create/' . $pengaduan['id_pengaduan']) ?>" class="btn btn-primary rounded-3 py-2 fw-bold shadow-sm">
+                    <i class="bi bi-tools me-2"></i> Tugaskan Teknisi
+                </a>
+
+                <button type="button" class="btn btn-outline-danger rounded-3 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#modalTolak">
+                    <i class="bi bi-x-circle me-2"></i> Tolak Laporan
+                </button>
             </div>
-        </div>
+        <?php else: ?>
+            <div class="alert alert-light border-0 text-center">
+                <small class="text-muted text-uppercase fw-bold" style="font-size: 0.7rem;">Status Saat Ini</small>
+                <h6 class="fw-bold mt-1 text-primary"><?= strtoupper($pengaduan['status']) ?></h6>
+            </div>
+        <?php endif; ?>
+
+        <hr class="my-4 opacity-5">
+        
+        <h6 class="fw-bold mb-2">Informasi Tambahan</h6>
+        <p class="small text-muted mb-0">Pastikan penolakan laporan didasari alasan yang kuat dan objektif.</p>
+    </div>
+</div>
+
+<div class="modal fade" id="modalTolak" ... > 
+   </div>
+
     </div>
 </div>
 

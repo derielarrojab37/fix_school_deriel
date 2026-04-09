@@ -35,6 +35,9 @@ $routes->get('/tanggapan', 'Tanggapan::index');
 $routes->get('/tanggapan/create/(:num)', 'Tanggapan::create/$1');
 $routes->post('/tanggapan/store', 'Tanggapan::store');
 $routes->get('/tanggapan/delete/(:num)', 'Tanggapan::delete/$1');
+$routes->get('/tanggapan/edit/(:num)', 'Tanggapan::edit/$1'); // Jalur untuk buka form edit
+$routes->post('/tanggapan/update/(:num)', 'Tanggapan::update/$1'); // Jalur untuk proses simpan editan
+$routes->get('/tanggapan/detail_pengaduan/(:num)', 'Tanggapan::detail_pengaduan/$1');
 
 $routes->get('/pengaduan', 'Pengaduan::index');
 $routes->get('/pengaduan/create', 'Pengaduan::create');
