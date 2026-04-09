@@ -9,11 +9,7 @@
             <i class="bi bi-house"></i> <span>Dashboard</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a href="<?= site_url('/logout') ?>">
-            <i class="bi bi-house"></i> <span>Log Out</span>
-        </a>
-    </li>
+
          <li class="nav-item">
         <a class="nav-link" href="<?= base_url('/users') ?>">
             <i class="bi bi-people"></i> <span>Users</span>
@@ -35,6 +31,11 @@
         <a class="nav-link" href="<?= base_url('tanggapan') ?>">
             <i class="bi bi-exclamation-circle"></i>
             <span>Tanggapan</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="<?= base_url('/logout') ?>">
+            <i class="bi bi-box-arrow-left"></i> <span>Log Out</span>
         </a>
     </li>
 

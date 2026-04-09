@@ -4,7 +4,7 @@
 
 <h3>Tambah Tanggapan</h3>
 
-<form action="/tanggapan/store" method="post">
+<form action="<?= base_url('tanggapan/store') ?>" method="post">
     <input type="hidden" name="id_pengaduan" value="<?= $id_pengaduan ?>">
 
     <div class="mb-3">
